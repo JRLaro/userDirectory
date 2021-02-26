@@ -1,13 +1,15 @@
 import React from "react";
 
-
-
 function Header() {
     const styleObj = {
-        fontSize: 40 
+        fontSize: 40,
+        textShadow: [3, 3, 0, "#000",
+            -1, - 1, 0, "#000",  
+             1, -1, 0, "#000",
+            -1,  1, 0, "#000",
+             1,  1, 0, "#000"]
     };
     const header = {
-        backgroundColor: "#4285F4",
         fontFamily: ["Satisfy", "cursive"],
     };
     const h1 = {
@@ -31,7 +33,7 @@ function Header() {
     
 
     return (
-        <div className="jumbotron display-1 jumbotron-fluid text-white border-bottom border-5 border-dark" style={header}>
+        <div className="jumbotron jumbotron-fluid bg-dark text-white border-bottom border-5 border-dark" style={header}>
         <div className="container">
         <h1 className="display-4 text-center" style={h1}>  Employee Directory  </h1> 
                 <div className="text-center mt-4">
@@ -45,7 +47,8 @@ function Header() {
                         
                     </span>
                 </div>
-        <p className="text-center mt-4" style={p}>Need to look for an Employee? We can help!</p>
+                <p className="text-center mt-4" style={p}>Need to look for an Employee? We can help!</p>
+                
         </div>
       </div>
     )

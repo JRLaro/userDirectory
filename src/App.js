@@ -1,8 +1,9 @@
 import React, { useState, useEffect }from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import {getUsers} from "./utils/api";
+import {getUsers} from "./utils/API";
 import { mapUsers } from "./utils/mapUsers";
+import SearchBar from "./components/SearchBar"
 
 
 function App() {
