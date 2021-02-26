@@ -1,10 +1,6 @@
 import React from 'react'
 
 export default function TableHeader() {
-    const opacity = {
-    // backgroundColor: "#00ccbb"
-        opacity: 0.5
-}
     const font = {
         fontSize: 20,
         // opacity: 0.9
